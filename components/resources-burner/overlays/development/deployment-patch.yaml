@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: resources-burner
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/test-rhtap-95-tenant/load-app-5c73508d-75c6-4e8a-bc26-28b00d7779d1/resources-burner@sha256:97cc00d0060c7181f4eac5d838e21dedbf00e81114b61f90027f2543f86201fb
+        name: container-image
+        resources: {}
+status: {}
